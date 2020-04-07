@@ -1,0 +1,238 @@
+/*******************************************************
+/* Site Colors
+/********************************************************
+#523249-purple
+#322B25-ugly brown
+#FFFFFF-white
+#F4F4F4-metallic white?
+#DBEBC0-mint green
+*/
+
+/*******************************************************
+/* Global Styles
+/********************************************************/
+
+/* Universal selector - clear browser defaults */
+* {
+    
+    /* set box sizing to border-box */
+    box-sizing: border-box;
+    /* clear margin and padding */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Body Styles */
+body {
+
+    /* Set font properties (size, color, family) */
+    font-size: 14pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+    /* Create some spacing between each line of page */
+    line-height: 1.6;
+
+}
+
+/* Container is a div in each section, which wraps content to center */
+.container {
+    /* Set the max width as percentage and center with margin */
+   
+   box-sizing: content-box;
+   width: 90%;
+   margin: auto;
+   
+
+   /* This hides scrollbars if content is too big for container and also clears floats (for branding and nav) */
+    overflow: hidden;
+}
+
+/* All the anchor tags on the page */
+a {
+    /* Remove underlining and set text color */
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* All the anchor tags in hover state */
+a:hover {
+    /* Set the text color */
+   color: blue;
+   
+
+}
+
+/* Base button style for both the dark and light buttons */
+button {
+    padding: 15px 25px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* Dark button (adds on to styles of button) */
+.btn-dark {
+    background-color: #523249;
+    color: white;
+    font-weight: bold;
+}
+
+/* Light button (adds on to styles of button) */
+.btn-light {
+    background-color: #DBEBC0;
+    color: black;
+    font-weight: bold;
+}
+
+/*******************************************************
+/* Header - contains brand and nav bar
+/********************************************************/
+
+/* Header section */
+header {
+    /* Set background, height, padding and border */
+    background-color: #322B25;
+    height: 90px;
+    padding: 15px;
+    border-bottom: 30px solid;
+    border-width: medium;
+    border-color: #DBEBC0;
+}
+
+/* Galactic Coffee logo */
+header .brand {
+    /* Position by floating left */
+    float: left;
+}
+
+/* Main navigation */
+header nav {
+    /* Position by floating right (no need to clear float, container is overflow:hidden which takes care of this) */
+    float: right;
+}
+
+/* Navigation item */
+header li {
+    /* Set display to inline-block (no need to float if we do this) */
+    display: inline-block;
+    /* Create space between each item by setting padding */
+    padding: 14px 16px;
+}
+
+/* Selector targets the first word of the brand "Galactic" */
+header .brand em {
+    /* Set the text color */
+    color:#DBEBC0;
+    font-style: normal;
+}
+
+/* Banner - contains tagline for site with background image */
+#banner {
+    /* Set the minimum height */
+    min-height: 430px;
+    /* Center text */
+    text-align: center;
+    /* Place the appropriate background image - should start on right top and cover the area */
+    background-image: url('../images/coffee-beans.jpg');
+    background-repeat: repeat-y;
+    background-position: right top;
+}
+
+/* The first sentence in the banner */
+#banner h2 {
+    /* Set to a large font size and set margins for positioning properly */
+    font-size: 65px;
+    margin: 50px;
+}
+
+/* The remainder of the text in banner */
+#banner p {
+    /* Set font size and position property with margins */
+    font-size: x-large;
+    margin: 45px;
+}
+
+/*******************************************************
+/* Subscription section - subscribe to daily menu
+/********************************************************/
+
+ /* Main section for subscription */
+#subscription {
+    /* Set padding and background */
+    background-color: #322B25;
+    padding: 10px;
+}
+
+/* Text for subcription section */
+#subscription h2 {
+    /* Float left and set the margin */
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Subscription form */
+#subscription form {
+    /* Float right. No need to clear the float b/c of overflow:hidden on container */
+    float: right;
+}
+
+/* Input field in subscription form */
+#subscription input[type="email"] {
+    /* Set display to inline-block, height, width, padding */
+    display: inline-block;
+    height: 49px;
+    width: 290px;
+    padding: 10px;
+
+}
+
+/*******************************************************
+/* Amenities
+/********************************************************/
+
+/* Amenities section */
+#amenities {
+    /* Set margin */
+    margin:1%;
+
+    /* Set text color and align center */
+    color: black;
+    text-align: center;
+}
+
+/* Feature box within the amenities (there are 3 in total) */
+#amenities .feature {
+    /* Float each feature left ... no need to clear b/c of the container */
+    float: left;
+    
+    /* Set each width as percentage */
+    width: 33.33%;
+      
+    /* Set padding within each feature */
+    padding: 5px;
+}
+
+/* Feature image */
+#amenities .feature img {
+    /* Set width to 100% of parent element */
+    width: 100%;
+    /* Set border radius to round corners of image */
+    border-radius: 2%;
+}
+
+/*******************************************************
+/* Footer
+/********************************************************/
+footer {
+    /* Set margin, background color, padding and align text to the center */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #523249;
+    text-align: center;
+
+}
